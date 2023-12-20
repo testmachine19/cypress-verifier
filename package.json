@@ -4,7 +4,8 @@
   "description": "cypress ui api tests",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --spec cypress/e2e/1-getting-started/api_tests.cy.js"
   },
   "keywords": [
     "test",
