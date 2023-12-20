@@ -1,0 +1,5 @@
+{
+  "loginField": "[data-cy=\"username\"]",
+  "passwordField": "[data-cy=\"password\"]",
+  "submitButton": "[data-cy=\"submit\"] > span"
+}
