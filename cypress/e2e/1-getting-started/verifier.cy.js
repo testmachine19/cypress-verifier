@@ -1,5 +1,6 @@
 import { faker } from "@faker-js/faker";
 import { LoginPage } from "../../pages/loginPage";
+const loginPageElements = require("../../fixtures/pages/loginPageSelectors.json");
 
 describe("verifier login - UI", () => {
   it("user can login", () => {
@@ -20,9 +21,9 @@ describe("verifier login - UI", () => {
 
     cy.get('[data-cy="accountMenu"] > .d-flex > span').click();
     cy.get('[data-cy="login"] > span').click();
-    cy.get('[data-cy="username"]').type("loki");
-    cy.get('[data-cy="password"]').type(newPassword);
-    cy.get('[data-cy="submit"] > span').click();
+    cy.get(loginPageElements.loginField).type("loki");
+    cy.get(loginPageElements.passwordField).type(newPassword);
+    cy.get(loginPageElements.submitButton).click();
 
     cy.changePasswordBack(newPassword, oldPassword);
   });
