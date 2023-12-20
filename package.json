@@ -1,0 +1,25 @@
+{
+  "name": "uiapi",
+  "version": "1.0.0",
+  "description": "cypress ui api tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "keywords": [
+    "test",
+    "cypress",
+    "api",
+    "ui"
+  ],
+  "author": "V. Vorobyov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.1",
+    "npx": "^10.2.2",
+    "open": "^10.0.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1"
+  }
+}
